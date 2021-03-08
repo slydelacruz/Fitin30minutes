@@ -1,4 +1,8 @@
 @media(max-width: 1024px) {
+    .contact {
+        padding: 60px;
+    }
+
     .contact .google-map {
         width: 100%;
     }

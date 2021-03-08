@@ -1,5 +1,5 @@
 .news {
-    padding: 60px;
+    padding: 120px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
@@ -9,7 +9,7 @@
 .news__content {
     display: grid;
     grid-template-columns: 500px 1fr;
-    grid-gap: 120px;
+    grid-gap: 80px;
     align-items: center;
 }
 

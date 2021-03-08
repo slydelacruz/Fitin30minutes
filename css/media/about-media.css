@@ -1,3 +1,8 @@
+@media(max-width: 1024px) {
+    .about {
+        padding: 60px;
+    }
+
 @media(max-width: 960px) {
     .about__content {
         grid-template-columns: 1fr;
