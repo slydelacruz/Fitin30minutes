@@ -1,0 +1,51 @@
+* {margin: 0; padding: 0;}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #0d090a;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body.scroll-disabled {
+	overflow: hidden;
+}
+
+button {
+	background: transparent;
+	border: 3px solid #3299a3;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 0;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	font-size: 20px;
+}
+
+button::after {
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #3299a3;
+	width: 0;
+	transition: width 0.3s ease-in-out;
+	position: absolute;
+	z-index: -1;
+}
+
+button:hover::after {
+	width: 100%;
+}
+
+h2 {
+	font-size: 35px;
+	text-transform: capitalize;
+	line-height: 120%;
+	margin-bottom: 30px;
+}

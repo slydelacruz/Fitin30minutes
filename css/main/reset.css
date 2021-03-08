@@ -1,0 +1,27 @@
+* {margin: 0; padding: 0;}
+
+
+input:focus, textarea:focus, button:focus {
+	outline:0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div, input, textarea, header {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+::placeholder {
+	color: #868485;
+}
+
+ul li {
+	list-style: none;
+}

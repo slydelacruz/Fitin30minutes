@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Fitin30minutes exam by Sly Dela Cruz">
+
+	<title>Fitin30minutes - Exam by Sly Dela Cruz</title>
+	<link rel="icon" href="images/favicon.jpg" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main/global.css">
+	<link rel="stylesheet" type="text/css" href="css/main/header.css">
+	<link rel="stylesheet" type="text/css" href="css/main/hero.css">
+	<link rel="stylesheet" type="text/css" href="css/main/about.css">
+	<link rel="stylesheet" type="text/css" href="css/main/news.css">
+	<link rel="stylesheet" type="text/css" href="css/main/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/main/calendar.css">
+
+	<link rel="stylesheet" type="text/css" href="css/media/global-media.css">
+	<link rel="stylesheet" type="text/css" href="css/media/header-media.css">
+	<link rel="stylesheet" type="text/css" href="css/media/hero-media.css">
+	<link rel="stylesheet" type="text/css" href="css/media/about-media.css">
+	<link rel="stylesheet" type="text/css" href="css/media/news-media.css">
+	<link rel="stylesheet" type="text/css" href="css/media/contact-media.css">
+	<link rel="stylesheet" type="text/css" href="css/media/calendar-media.css">
+
+</head>
+
+<body>
+	<header>
+		<a class="logo" href="/"><img src="images/logo.png" /></a>
+		<nav>
+			<img class="mobile-logo" src="images/logo.png">
+			<ul>
+				<li>
+					<a>Home</a>
+				</li>
+				<li>
+					<a>Our Services</a>
+				</li>
+				<li>
+					<a>Pricing Plan</a>
+				</li>
+				<li>
+					<a>Our Team</a>
+				</li>
+				<li>
+					<a>Contact Us</a>
+				</li>
+			</ul>
+
+		</nav>
+		<button class="login">Login</button>
+		<button class="mobile-nav" onclick=mobileMenuHandler()>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+	</header>
+	<div class="calendar-overlay">
+		<div class="calendar">
+			<button onclick=closeCalendar() class="close">X</button>
+			<h3>Start today!</h3>
+			<button class="month-btn">February 21<i class="fas fa-arrow-right"></i></button>
+			<ul class="days-heading">
+				<li>Mon</li>
+				<li>Tue</li>
+				<li>Wed</li>
+				<li>Thu</li>
+				<li>Fri</li>
+				<li>Sat</li>
+				<li>Sun</li>
+			</ul>
+			<ul class="days">
+				<li><p>1</p></li>
+				<li><p>2</p></li>
+				<li><p>3</p></li>
+				<li><p>4<p></li>
+				<li><p>5</p></li>
+				<li><p>6</p></li>
+				<li><p>7</p></li>
+				<li><p>8</p></li>
+				<li><p>9</p></li>
+				<li><p>10</p></li>
+				<li><p>11</p></li>
+				<li><p>12</p></li>
+				<li><p>13</p></li>
+				<li><p>14</p></li>
+				<li><p>15</p></li>
+				<li><p>16</p></li>
+				<li><p>17</p></li>
+				<li><p>18</p></li>
+				<li><p>19</p></li>
+				<li><p>20</p></li>
+				<li><p>21</p></li>
+				<li class="active"><p>22</p></li>
+				<li class="active"><p>23</p></li>
+				<li class="active"><p>24</p></li>
+				<li class="active"><p>25</p></li>
+				<li class="active"><p>26</p></li>
+				<li class="active"><p>27</p></li>
+				<li class="active"><p>28</p></li>
+			</ul>
+		</div>
+	</div>
+	<section id="hero" class="hero">
+		<div class="hero__content">
+			<p class="hero__title">Hybrid in-person or online private</p>
+			<p class="hero__sub-title">sub-title here</p>
+			<button onclick=calendarHandler()>Start today</button>
+		</div>
+
+		<div class="slider">
+			<span class="dot active"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</section>
+	<section class="about">
+		<div class="about__content">
+			<div class="about__image-holder"><img src="images/content/about1.jpg" />
+				<div class="border"></div>
+			</div>
+			<div class="about__description first-item-mobile">
+				<h2>Hybrid in-person or online private training</h2>
+				<p>Enjoy 1-on-1 training with our Fit in 30 trainers! Our diverse team of personal trainers are
+					committed to creating a unique experience just for you. Whether you want to lose weight, build mor
+					muscle mass or improve your athletic performance, we have the knowledge and the skills to help you
+					reach your goal.</p>
+				<button>Learn more</button>
+			</div>
+
+			<div class="about__description">
+				<h2>Hybrid in-person or online private training</h2>
+				<p>Enjoy 1-on-1 training with our Fit in 30 trainers! Our diverse team of personal trainers are
+					committed to creating a unique experience just for you. Whether you want to lose weight, build mor
+					muscle mass or improve your athletic performance, we have the knowledge and the skills to help you
+					reach your goal.</p>
+				<button class="right-btn">Learn more</button>
+			</div>
+			<div class="about__image-holder"><img src="images/content/about2.jpg" />
+				<div class="border"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news">
+		<h2>News feed</h2>
+		<div class="news__content">
+			<iframe class="fb-widget"
+				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffitin30min&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+				style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+			<div class="news__description">
+				<h2>Another caption here</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis neque sit amet bibendum
+					euismod. Nullam a magna sed ligula dignissim consequat sed sit amet justo. Nunc viverra vestibulum
+					molestie. Pellentesque et massa velit. Quisque rhoncus hendrerit felis a consectetur. Nulla
+					facilisi. Cras id elit a lacus tempor varius sit amet non nulla.</p>
+
+				<p>Duis massa arcu, tempus in imperdiet eu, elementum in eros. Vestibulum at luctus libero. Nullam
+					congue id odio et mollis. Phasellus sollicitudin sagittis risus, et efficitur libero</p>
+
+				<button>Reserve Your Spot Today</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<h2>Connect with us</h2>
+		<div class="contact__content">
+			<form>
+				<input type="text" name="fullname" placeholder="Full Name*" required>
+				<input type="email" name="email" placeholder="Email*" required>
+				<input type="tel" name="phone" placeholder="Phone">
+				<textarea name="message" placeholder="Message" rows="4"></textarea>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+
+			<div class="contact__description">
+				<div class="contact__operating-hours">
+					<p>1.844.FIT.IN30(1.844.348.4630)</p>
+					<p>Monday to Friday: 6 am - 8 pm</p>
+					<p>Saturday and Sunday: 8 am - 2 pm</p>
+					<p>508 West 6th Ave Vancouver, BC</p>
+				</div>
+				<ul class="social-media">
+					<li>
+						<a href="">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fab fa-apple"></i>
+						</a>
+					</li>
+				</ul>
+				<iframe class="google-map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.569032106442!2d-123.1173546843307!3d49.26561397932953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673dc3653d0bf%3A0x404a21ab1f7ac6db!2s508%20W%206th%20Ave%2C%20Vancouver%2C%20BC%20V5Y%201L3%2C%20Canada!5e0!3m2!1sen!2sph!4v1615225593656!5m2!1sen!2sph"
+					allowfullscreen="" loading="lazy"></iframe>
+			</div>
+
+		</div>
+
+		<div class="current-openings">
+			<h2>Current Openings</h2>
+			<ul>
+				<li>
+					<p>Personal Trainer</p>
+					<p>Vancouver, BC</p>
+					<p>Full-time</p>
+				</li>
+			</ul>
+			<a href="#hero" class="jump-to-top"><i class="fas fa-caret-up"></i></a>
+		</div>
+	</section>
+	<footer>
+		<p>© 2021 (Fit In 30 Minutes) | Powered by WittyCookie, a Vancouver Web Design & Vancouver SEO</p>
+	</footer>
+
+	<script>
+		const mobileMenuHandler = () => {
+			const menuBtn = document.querySelector('.mobile-nav')
+			const openMenu = document.querySelector('header nav')
+
+			menuBtn.classList.toggle('open')
+			openMenu.classList.toggle('open')
+
+			if (menuBtn.classList.contains('open')) {
+				document.body.classList.add('scroll-disabled')
+			}
+
+			else {
+				document.body.classList.remove('scroll-disabled')
+			}
+		}
+
+		const calendarHandler = () => {
+			const calendarOverlay = document.querySelector('.calendar-overlay')
+			const hero = document.querySelector('.hero')
+
+			hero.classList.toggle('blur')
+			calendarOverlay.classList.toggle('show')
+		}
+
+		const closeCalendar = () => {
+			const calendarOverlay = document.querySelector('.calendar-overlay')
+			const closeCalendar = document.querySelector('.calendar .close')
+			const hero = document.querySelector('.hero')
+
+			hero.classList.toggle('blur')
+			calendarOverlay.classList.toggle('show')	
+		}
+	</script>
+</body>
+
+</html>

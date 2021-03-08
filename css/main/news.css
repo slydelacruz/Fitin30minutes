@@ -1,0 +1,30 @@
+.news {
+    padding: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-image: url('../../images/background/news.jpg')
+}
+
+.news__content {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-gap: 120px;
+    align-items: center;
+}
+
+.news .fb-widget {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.news__description p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.news__description button {
+    background-color: #0d090a;
+    width: 280px;
+    margin-top: 30px;
+    border-color: #1ecdde;
+}

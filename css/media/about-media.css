@@ -1,0 +1,31 @@
+@media(max-width: 960px) {
+    .about__content {
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+    }
+
+    .about__description .right-btn {
+        margin-left: 0;
+    }
+
+    .about__description.first-item-mobile {
+        grid-row: -1;
+    }
+}
+
+@media(max-width: 475px) {
+    .about {
+        padding: 30px;
+    }
+
+    .about__image-holder .border {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .news .fb-page span, .news .fb-page iframe {
+        width: 300px !important;
+    }
+}

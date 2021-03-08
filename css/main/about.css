@@ -1,0 +1,37 @@
+.about {
+    padding: 60px;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px;
+    align-items: center;
+}
+
+.about__description button {
+    margin-top: 30px;
+    width: 180px;
+    display: block;
+}
+
+.about__description .right-btn {
+    margin-left: auto;
+}
+
+.about__image-holder {
+    position: relative;
+}
+
+.about__image-holder .border {
+    border: 3px solid #3299a3;
+    height: 100%;
+    width: 100%;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+}
+
+.about__image-holder img {
+    width: 100%;
+}

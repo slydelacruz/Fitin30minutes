@@ -1,0 +1,113 @@
+header {
+    background-color: #0d090a;
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    grid-gap: 20px;
+    top: 0;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header nav {
+    justify-self: end;
+    text-transform: uppercase;
+    font-size: 13px;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+}
+
+header nav.open {
+    display: grid;
+}
+
+header .mobile-logo {
+    display: none;
+    width: 140px;
+}
+
+header nav.open .mobile-logo {
+    display: block;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+header nav ul li a {
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #3299a3;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header button {
+    text-transform: uppercase;
+}
+
+header button.login {
+    width: 75px;
+    padding: 5px 0;
+    justify-self: end;
+    font-size: 13px;
+}
+
+header .mobile-nav {
+    display: none;
+    border: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+header .mobile-nav:hover::after {
+    display: none;
+}
+header .mobile-nav .line {
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: #fff;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+header .mobile-nav .line:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+header .mobile-nav.open .line:first-child {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+header .mobile-nav.open .line:last-child {
+    transform: translateX(100%);
+    opacity: 0;
+}
